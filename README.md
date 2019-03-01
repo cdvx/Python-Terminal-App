@@ -19,5 +19,5 @@
 ---------------------------------------------------------------------------------------------------
 
 ## Prerequsites
-1. Get a `NewsAPI key from (Here)[https://newsapi.org/docs/get-started]
+1. Get a `NewsAPI key` from [Here](https://newsapi.org/docs/get-started)
 2. Create a `.env` file and add the key as shown in thw `.env.sample`

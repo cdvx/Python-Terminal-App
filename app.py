@@ -39,7 +39,7 @@ def organize_articles(response):
             title = article['title']
             description = article['description']
             Id = articles.index(article) + 1
-            display.append(f'\nArticle:{Id}\n\nTitle:{title}\n\nDescription:{description}\By:{author}\n\nBody:{content}')
+            display.append(f'\nArticle:{Id}\n\nTitle:\n{title}\n\nDescription:\n{description}\n\nBy:\n{author}\n\nBody:\n{content}')
     return display
 
 
@@ -55,6 +55,7 @@ def start(news=None):
     click.echo(click.style("\n\nHello, welcome to the News application 😊", bold=True, fg='yellow'))
     if news and news == "bitcoin":
         click.echo(click.style(f'\n\n The top {news} headlines from this week are -->', fg='green'))
+
         for article in articles:
             click.echo(click.style(f"\n {article} \n", bg='black'))
     elif news and news != "bitcon":
